@@ -1,0 +1,36 @@
+<% if @user.errors.any? %>
+    <ul>
+    <% @user.errors.full_messages.each do |m| %>
+        <li><%= m %> </li>
+    
+    <% end %>
+    
+    </ul>
+<% end %>
+
+
+<h1>Update your profile</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user) do |f| %>
+      
+
+      <%= f.label :login %>
+      <%= f.text_field :login %><br>
+
+      <%= f.label :email %>
+      <%= f.email_field :email %><br>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %><br>
+      <%= f.label :password %>
+      <%= f.password_field :password %><br>
+       <%= f.file_field :avatar %>
+
+      <%= f.submit "Save changes" %>
+    <% end %>
+
+    
+  </div>
+</div>

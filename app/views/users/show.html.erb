@@ -1,0 +1,14 @@
+
+<h2><%= @user.login %></h2>
+
+<%= image_tag @user.avatar.url(:thumb) %>
+
+<div class="follow_status">
+    
+<%= render "partials/follow_status" %>
+  </div>
+<% @posts.each do |post| %>
+    <%= image_tag post.image %>
+    <%= post.description %>
+    <% end %>
+

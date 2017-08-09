@@ -1,0 +1,63 @@
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+.navbar-custom{
+    background: white;
+    
+    li a:hover{
+        background: white;
+        color:  #F06767;
+    }
+    
+    a {
+        color: black;
+    }
+    
+    a:hover{
+        color: #ccc;
+    }
+}
+
+.right-side{
+	display: flex;
+	flex-direction: row;
+	float: left;
+	justify-content: center;
+	align-items: center;
+}
+hr.vertical{
+	width: 0;
+	height: 35px;
+	border: 0.3px solid grey;
+}
+.icon{	
+    
+	width: 30%;
+	height: 10%;
+    margin-left: -15%;
+}
+.label{
+	margin-left: 10px;
+	margin-top: 5px;
+	height: 35px;
+	
+}
+.pagination-center{
+    
+    text-align: center;
+    
+}
+
+.thumbnail{
+    display: block;
+    max-width: 300px;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center{
+    margin-top: -1%;
+}

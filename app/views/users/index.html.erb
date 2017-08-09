@@ -1,0 +1,14 @@
+<ul class="list-group">
+    <% @users.each do |user| %>
+        <li class = "list-group-item"> 
+        
+        
+        <%= image_tag user.avatar.url(:thumb), :style => "border-radius: 50%; " %>
+        <%= link_to user.login, user %> 
+    
+        <div class="follow_status"><%= render "partials/follow_status" %></div>
+ 
+        </li>
+    <% end %>
+</ul>
+
